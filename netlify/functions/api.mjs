@@ -5,7 +5,7 @@ import multer from 'multer';
 import serverless from 'serverless-http';
 
 const app = express();
-const JWT_SECRET = process.env.JWT_SECRET || 'chanxueyan-key-2026';
+const JWT_SECRET = process.env.APP_JWT_SECRET || process.env.JWT_SECRET || 'chanxueyan-key-2026';
 
 const supabase = createClient(
   process.env.SUPABASE_URL || '',
