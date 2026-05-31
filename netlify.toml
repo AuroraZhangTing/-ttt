@@ -1,5 +1,5 @@
 [build]
-  command = "cd frontend && npx vite build"
+  command = "cd frontend && npm install && npx vite build"
   publish = "frontend/dist"
   functions = "netlify/functions"
 
