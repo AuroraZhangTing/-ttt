@@ -3,11 +3,15 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "install:all": "cd backend && npm install && cd ../frontend && npm install",
-    "build:frontend": "cd frontend && npx vite build",
-    "build": "npm run build:frontend",
     "start": "cd backend && node src/index.js",
-    "dev:backend": "cd backend && node src/index.js",
-    "dev:frontend": "cd frontend && npx vite"
+    "dev:api": "node api/index.js",
+    "build:frontend": "cd frontend && npx vite build"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.0",
+    "jsonwebtoken": "^9.0.2",
+    "multer": "^1.4.5-lts.1"
   }
 }
