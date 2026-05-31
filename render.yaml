@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: chanxueyan
+    env: node
+    region: singapore
+    buildCommand: npm install && cd backend && npm install && cd ../frontend && npm install && cd .. && npm run build:frontend
+    startCommand: cd backend && node src/index.js
+    envVars:
+      - key: JWT_SECRET
+        value: chanxueyan-key-2026
+      - key: PORT
+        value: 10000

@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.vite/
+*.db
+uploads/*
+!uploads/.gitkeep
+backend/*.log
+backend/*.err
+frontend/*.log
+frontend/*.err
+backend/server.log
+backend/server.err
